@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="t">
+  <title id="t">De los datos a las ideas — banner de análisis de datos</title>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset=".5" stop-color="#101a30"/>
+      <stop offset="1" stop-color="#0b1020"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity=".13"/>
+      <stop offset=".55" stop-color="#3b82f6" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx=".5" cy=".5" r=".72">
+      <stop offset="0" stop-color="#05070f" stop-opacity="0"/>
+      <stop offset=".62" stop-color="#05070f" stop-opacity="0"/>
+      <stop offset="1" stop-color="#05070f" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="ideaGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7db4fb"/>
+      <stop offset="1" stop-color="#3ce0c8"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c3cfe6"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2=".35">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#ffffff" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="divider" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#60a5fa" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="chartStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1" fill="#7dd3fc" opacity=".06"/>
+    </pattern>
+    <mask id="titleMask">
+      <text x="640" y="212" text-anchor="middle" fill="#fff" font-size="54" font-weight="600" font-family="'Segoe UI','SF Pro Display','Helvetica Neue',Arial,sans-serif">De los datos&lt;tspan dx="14" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-weight="400" font-size="58"&gt;a las ideas.&lt;/tspan&gt;</text>
+    </mask>
+  </defs>
+
+  <style>
+    .node{transform-box:fill-box;transform-origin:center;animation:pulse 5s ease-in-out infinite}
+    .edge{stroke:#60a5fa;stroke-width:1;animation:breathe 8s ease-in-out infinite}
+    .float{transform-box:fill-box;transform-origin:center;animation:floaty 9s ease-in-out infinite}
+    .draw{fill:none;stroke:url(#chartStroke);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:380;animation:draw 10s ease-in-out infinite}
+    .area{fill:url(#accent);animation:areaFade 10s ease-in-out infinite}
+    .tip{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-in-out infinite}
+    .bar{transform-box:fill-box;transform-origin:center bottom;animation:grow 6s ease-in-out infinite}
+    .pR{animation:travelR 26s linear infinite}
+    .pL{animation:travelL 26s linear infinite}
+    .tw{animation:tw 4s ease-in-out infinite}
+    @keyframes pulse{0%,100%{transform:scale(.85);opacity:.5}50%{transform:scale(1.3);opacity:1}}
+    @keyframes breathe{0%,100%{opacity:.1}50%{opacity:.28}}
+    @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+    @keyframes draw{0%{stroke-dashoffset:380;opacity:0}10%{opacity:.9}45%{stroke-dashoffset:0;opacity:.9}72%{stroke-dashoffset:0;opacity:.9}100%{stroke-dashoffset:0;opacity:0}}
+    @keyframes areaFade{0%{opacity:0}45%{opacity:.07}72%{opacity:.07}100%{opacity:0}}
+    @keyframes grow{0%,100%{transform:scaleY(.45);opacity:.4}50%{transform:scaleY(1);opacity:.9}}
+    @keyframes travelR{0%{transform:translateX(0);opacity:0}12%{opacity:.55}88%{opacity:.55}100%{transform:translateX(300px);opacity:0}}
+    @keyframes travelL{0%{transform:translateX(0);opacity:0}12%{opacity:.55}88%{opacity:.55}100%{transform:translateX(-300px);opacity:0}}
+    @keyframes tw{0%,100%{opacity:.08}50%{opacity:.5}}
+  </style>
+
+  <!-- Fondo -->
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  <rect width="1280" height="400" fill="url(#grid)"/>
+  <ellipse cx="640" cy="195" rx="520" ry="190" fill="url(#halo)"/>
+
+  <!-- Marco de esquinas -->
+  <g fill="none" stroke="url(#accent)" stroke-width="1.5" opacity=".35">
+    <path d="M24,64 V36 Q24,24 36,24 H64"/>
+    <path d="M1216,24 H1244 Q1256,24 1256,36 V64"/>
+    <path d="M24,336 V364 Q24,376 36,376 H64"/>
+    <path d="M1216,376 H1244 Q1256,376 1256,364 V336"/>
+  </g>
+
+  <!-- Detalles de código sutiles -->
+  <text class="float" style="animation-delay:-2s" x="345" y="105" font-family="ui-monospace,Consolas,monospace" font-size="26" fill="#7dd3fc" opacity=".09">{ }</text>
+  <text class="float" style="animation-delay:-5s" x="905" y="122" font-family="ui-monospace,Consolas,monospace" font-size="24" fill="#7dd3fc" opacity=".08">&lt;/&gt;</text>
+
+  <!-- Red de nodos izquierda -->
+  <g>
+    <line class="edge" x1="85" y1="85" x2="175" y2="55"/>
+    <line class="edge" style="animation-delay:-1s" x1="175" y1="55" x2="258" y2="95"/>
+    <line class="edge" style="animation-delay:-2s" x1="258" y1="95" x2="295" y2="165"/>
+    <line class="edge" style="animation-delay:-3s" x1="85" y1="85" x2="140" y2="150"/>
+    <line class="edge" style="animation-delay:-4s" x1="175" y1="55" x2="140" y2="150"/>
+    <line class="edge" style="animation-delay:-5s" x1="140" y1="150" x2="68" y2="205"/>
+    <line class="edge" style="animation-delay:-6s" x1="140" y1="150" x2="215" y2="208"/>
+    <line class="edge" style="animation-delay:-7s" x1="68" y1="205" x2="215" y2="208"/>
+    <line class="edge" style="animation-delay:-2.5s" x1="215" y1="208" x2="295" y2="165"/>
+    <circle class="node" cx="85" cy="85" r="3" fill="#60a5fa"/>
+    <circle class="node" style="animation-delay:-1.2s" cx="175" cy="55" r="2.5" fill="#2dd4bf"/>
+    <circle class="node" style="animation-delay:-2.4s" cx="258" cy="95" r="3" fill="#a78bfa"/>
+    <circle class="node" style="animation-delay:-3.1s" cx="140" cy="150" r="4" fill="#60a5fa"/>
+    <circle class="node" style="animation-delay:-4s" cx="68" cy="205" r="2.5" fill="#2dd4bf"/>
+    <circle class="node" style="animation-delay:-.7s" cx="215" cy="208" r="3" fill="#60a5fa"/>
+    <circle class="node" style="animation-delay:-1.9s" cx="295" cy="165" r="2.5" fill="#a78bfa"/>
+    <circle r="2.2" cx="175" cy="55" fill="#93c5fd" opacity=".7">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M0,0 L83,40"/>
+      <animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.15;.8;1" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2.2" cx="140" cy="150" fill="#93c5fd" opacity=".7">
+      <animateMotion dur="7.5s" begin="-2s" repeatCount="indefinite" path="M0,0 L75,58"/>
+      <animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.15;.8;1" dur="7.5s" begin="-2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Red de nodos derecha -->
+  <g>
+    <line class="edge" style="animation-delay:-.5s" x1="1045" y1="75" x2="1135" y2="55"/>
+    <line class="edge" style="animation-delay:-2.2s" x1="1135" y1="55" x2="1210" y2="105"/>
+    <line class="edge" style="animation-delay:-3.4s" x1="1210" y1="105" x2="1175" y2="195"/>
+    <line class="edge" style="animation-delay:-4.6s" x1="1045" y1="75" x2="1090" y2="155"/>
+    <line class="edge" style="animation-delay:-5.8s" x1="1135" y1="55" x2="1090" y2="155"/>
+    <line class="edge" style="animation-delay:-1.4s" x1="1090" y1="155" x2="1005" y2="215"/>
+    <line class="edge" style="animation-delay:-6.5s" x1="1090" y1="155" x2="1175" y2="195"/>
+    <line class="edge" style="animation-delay:-3s" x1="1005" y1="215" x2="1175" y2="195"/>
+    <circle class="node" style="animation-delay:-2.8s" cx="1045" cy="75" r="3" fill="#2dd4bf"/>
+    <circle class="node" style="animation-delay:-.4s" cx="1135" cy="55" r="2.5" fill="#60a5fa"/>
+    <circle class="node" style="animation-delay:-1.6s" cx="1210" cy="105" r="3" fill="#a78bfa"/>
+    <circle class="node" style="animation-delay:-3.7s" cx="1090" cy="155" r="4" fill="#60a5fa"/>
+    <circle class="node" style="animation-delay:-4.9s" cx="1005" cy="215" r="2.5" fill="#2dd4bf"/>
+    <circle class="node" style="animation-delay:-2s" cx="1175" cy="195" r="3" fill="#60a5fa"/>
+    <circle r="2.2" cx="1135" cy="55" fill="#93c5fd" opacity=".7">
+      <animateMotion dur="6.5s" begin="-2s" repeatCount="indefinite" path="M0,0 L75,50"/>
+      <animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.15;.8;1" dur="6.5s" begin="-2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2.2" cx="1090" cy="155" fill="#93c5fd" opacity=".7">
+      <animateMotion dur="7s" begin="-4s" repeatCount="indefinite" path="M0,0 L85,40"/>
+      <animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.15;.8;1" dur="7s" begin="-4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Cadena superior central -->
+  <g>
+    <line class="edge" x1="455" y1="58" x2="545" y2="92"/>
+    <line class="edge" style="animation-delay:-2s" x1="545" y1="92" x2="640" y2="48"/>
+    <line class="edge" style="animation-delay:-4s" x1="640" y1="48" x2="735" y2="88"/>
+    <line class="edge" style="animation-delay:-6s" x1="735" y1="88" x2="830" y2="55"/>
+    <circle class="node" cx="455" cy="58" r="2" fill="#60a5fa"/>
+    <circle class="node" style="animation-delay:-1s" cx="545" cy="92" r="2.5" fill="#2dd4bf"/>
+    <circle class="node" style="animation-delay:-2.2s" cx="640" cy="48" r="2" fill="#a78bfa"/>
+    <circle class="node" style="animation-delay:-3.4s" cx="735" cy="88" r="2.5" fill="#60a5fa"/>
+    <circle class="node" style="animation-delay:-4.6s" cx="830" cy="55" r="2" fill="#2dd4bf"/>
+    <circle r="2" cx="455" cy="58" fill="#93c5fd" opacity=".7">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M0,0 L90,34 L185,-10 L280,30 L375,-3"/>
+      <animate attributeName="opacity" values="0;.85;.85;0" keyTimes="0;.12;.88;1" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Cadena inferior central -->
+  <g>
+    <line class="edge" style="animation-delay:-1.5s" x1="500" y1="345" x2="600" y2="368"/>
+    <line class="edge" style="animation-delay:-3s" x1="600" y1="368" x2="720" y2="352"/>
+    <line class="edge" style="animation-delay:-4.5s" x1="720" y1="352" x2="840" y2="370"/>
+    <line class="edge" style="animation-delay:-6s" x1="840" y1="370" x2="950" y2="340"/>
+    <circle class="node" style="animation-delay:-.8s" cx="500" cy="345" r="2" fill="#2dd4bf"/>
+    <circle class="node" style="animation-delay:-2s" cx="600" cy="368" r="2.5" fill="#60a5fa"/>
+    <circle class="node" style="animation-delay:-3.2s" cx="720" cy="352" r="2" fill="#a78bfa"/>
+    <circle class="node" style="animation-delay:-4.4s" cx="840" cy="370" r="2.5" fill="#2dd4bf"/>
+    <circle class="node" style="animation-delay:-5.6s" cx="950" cy="340" r="2" fill="#60a5fa"/>
+    <circle r="2" cx="500" cy="345" fill="#93c5fd" opacity=".7">
+      <animateMotion dur="12s" begin="-4s" repeatCount="indefinite" path="M0,0 L100,23 L220,7 L340,25 L450,-5"/>
+      <animate attributeName="opacity" values="0;.85;.85;0" keyTimes="0;.12;.88;1" dur="12s" begin="-4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Gráfico de línea (abajo izquierda) -->
+  <g>
+    <line x1="95" y1="352" x2="370" y2="352" stroke="#60a5fa" stroke-width="1" opacity=".12"/>
+    <path class="area" d="M95,340 L150,308 L205,322 L258,286 L315,300 L370,266 L370,352 L95,352 Z"/>
+    <path class="draw" d="M95,340 L150,308 L205,322 L258,286 L315,300 L370,266"/>
+    <circle class="tip" cx="370" cy="266" r="3.5" fill="#2dd4bf"/>
+    <circle class="tip" style="animation-delay:-1.5s" cx="95" cy="340" r="2.5" fill="#60a5fa"/>
+  </g>
+
+  <!-- Gráfico de barras (abajo derecha) -->
+  <g>
+    <line x1="1048" y1="352" x2="1196" y2="352" stroke="#60a5fa" stroke-width="1" opacity=".12"/>
+    <rect class="bar" x="1058" y="304" width="16" height="48" rx="2" fill="url(#barGrad)"/>
+    <rect class="bar" style="animation-delay:-1s" x="1086" y="274" width="16" height="78" rx="2" fill="url(#barGrad)"/>
+    <rect class="bar" style="animation-delay:-2s" x="1114" y="292" width="16" height="60" rx="2" fill="url(#barGrad)"/>
+    <rect class="bar" style="animation-delay:-3s" x="1142" y="252" width="16" height="100" rx="2" fill="url(#barGrad)"/>
+    <rect class="bar" style="animation-delay:-4s" x="1170" y="282" width="16" height="70" rx="2" fill="url(#barGrad)"/>
+  </g>
+
+  <!-- Mini matriz de datos titilante -->
+  <g fill="#7dd3fc">
+    <circle class="tw" cx="400" cy="306" r="1.4"/>
+    <circle class="tw" style="animation-delay:-.6s" cx="425" cy="306" r="1.4"/>
+    <circle class="tw" style="animation-delay:-1.2s" cx="450" cy="306" r="1.4"/>
+    <circle class="tw" style="animation-delay:-1.8s" cx="475" cy="306" r="1.4"/>
+    <circle class="tw" style="animation-delay:-2.4s" cx="400" cy="322" r="1.4"/>
+    <circle class="tw" style="animation-delay:-3s" cx="425" cy="322" r="1.4"/>
+    <circle class="tw" style="animation-delay:-.9s" cx="450" cy="322" r="1.4"/>
+    <circle class="tw" style="animation-delay:-2.1s" cx="475" cy="322" r="1.4"/>
+    <circle class="tw" style="animation-delay:-1.5s" cx="400" cy="338" r="1.4"/>
+    <circle class="tw" style="animation-delay:-2.7s" cx="425" cy="338" r="1.4"/>
+    <circle class="tw" style="animation-delay:-.3s" cx="450" cy="338" r="1.4"/>
+    <circle class="tw" style="animation-delay:-3.4s" cx="475" cy="338" r="1.4"/>
+  </g>
+
+  <!-- Anillo analítico girando -->
+  <g>
+    <circle cx="925" cy="312" r="19" fill="none" stroke="#60a5fa" stroke-width="2" opacity=".15"/>
+    <circle cx="925" cy="312" r="19" fill="none" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" stroke-dasharray="30 89">
+      <animateTransform attributeName="transform" type="rotate" from="0 925 312" to="360 925 312" dur="18s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Partículas a la deriva -->
+  <g fill="#7dd3fc">
+    <circle class="pR" style="animation-duration:24s;animation-delay:-4s" cx="330" cy="72" r="2"/>
+    <circle class="pL" style="animation-duration:28s;animation-delay:-10s" cx="770" cy="105" r="1.8" fill="#a5b4fc"/>
+    <circle class="pL" style="animation-duration:26s;animation-delay:-16s" cx="980" cy="268" r="2"/>
+    <circle class="pR" style="animation-duration:22s;animation-delay:-8s" cx="170" cy="315" r="1.8" fill="#a5b4fc"/>
+    <circle class="pL" style="animation-duration:30s;animation-delay:-20s" cx="1120" cy="140" r="2"/>
+    <circle class="pR" style="animation-duration:27s;animation-delay:-13s" cx="470" cy="330" r="1.8"/>
+    <circle class="pR" style="animation-duration:20s;animation-delay:-6s" cx="620" cy="120" r="1.6"/>
+    <circle class="pR" style="animation-duration:26s;animation-delay:-22s" cx="55" cy="300" r="1.8" fill="#a5b4fc"/>
+  </g>
+
+  <!-- Destellos -->
+  <g fill="#c4b5fd">
+    <circle class="tw" cx="410" cy="140" r="1.2"/>
+    <circle class="tw" style="animation-delay:-1s" cx="870" cy="285" r="1.2" fill="#7dd3fc"/>
+    <circle class="tw" style="animation-delay:-2s" cx="975" cy="55" r="1.2"/>
+    <circle class="tw" style="animation-delay:-3s" cx="350" cy="58" r="1.2" fill="#7dd3fc"/>
+    <circle class="tw" style="animation-delay:-.5s" cx="1215" cy="175" r="1.2"/>
+    <circle class="tw" style="animation-delay:-1.7s" cx="65" cy="265" r="1.2" fill="#7dd3fc"/>
+    <circle class="tw" style="animation-delay:-2.6s" cx="770" cy="352" r="1.2"/>
+  </g>
+
+  <!-- Viñeta de profundidad -->
+  <rect width="1280" height="400" fill="url(#vig)"/>
+
+  <!-- Bloque central -->
+  <g>
+    <!-- Etiqueta superior monoespaciada -->
+    <line x1="348" y1="126" x2="418" y2="126" stroke="#7dd3fc" stroke-width="1" opacity=".2"/>
+    <line x1="862" y1="126" x2="932" y2="126" stroke="#7dd3fc" stroke-width="1" opacity=".2"/>
+    <text x="640" y="131" text-anchor="middle" font-family="ui-monospace,'Cascadia Mono','SF Mono',Consolas,monospace" font-size="12.5" letter-spacing="5.5" fill="#7dd3fc" opacity=".6">ANÁLISIS DE DATOS · PYTHON · IA</text>
+
+    <!-- Título mixto: sans-serif + serif itálica -->
+    <text x="640" y="212" text-anchor="middle" font-family="'Segoe UI','SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="54" font-weight="600" fill="url(#textGrad)">De los datos&lt;tspan dx="14" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-weight="400" font-size="58" fill="url(#ideaGrad)"&gt;a las ideas.&lt;/tspan&gt;</text>
+
+    <!-- Destello que recorre el título -->
+    <g mask="url(#titleMask)">
+      <rect x="-260" y="155" width="240" height="75" fill="url(#shine)">
+        <animateTransform attributeName="transform" type="translate" values="-180 0;1700 0;1700 0" keyTimes="0;.28;1" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Línea divisoria con punto viajero -->
+    <line x1="470" y1="248" x2="810" y2="248" stroke="url(#divider)" stroke-width="1"/>
+    <circle cx="470" cy="248" r="2.2" fill="#7dd3fc">
+      <animateMotion dur="7s" begin="-2s" repeatCount="indefinite" path="M470,248 L810,248"/>
+      <animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.85;1" dur="7s" begin="-2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Subtítulo monoespaciado con cursor -->
+    <text x="640" y="292" text-anchor="middle" font-family="ui-monospace,'Cascadia Mono','SF Mono',Consolas,monospace" font-size="16" letter-spacing="1.2" fill="#8fa3c4" opacity=".9">convirtiendo información en decisiones&lt;tspan dx="8" fill="#5eead4"&gt;_&lt;animate attributeName="opacity" values="1;0" keyTimes="0;.5" calcMode="discrete" dur="1.2s" repeatCount="indefinite"/&gt;&lt;/tspan&gt;</text>
+  </g>
+</svg>
