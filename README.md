@@ -1,4 +1,7 @@
-<img src="banner.svg" alt="Banner de mi perfil" width="100%">
+<a href="https://github.com">
+  <img src="https://githubusercontent.com" alt="Banner de mi perfil" width="100%">
+</a>
+
 
 
 👋 Hola, a todos!
