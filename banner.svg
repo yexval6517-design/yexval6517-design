@@ -12,32 +12,13 @@
       <stop offset=".55" stop-color="#3b82f6" stop-opacity=".05"/>
       <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="vig" cx=".5" cy=".5" r=".72">
-      <stop offset="0" stop-color="#05070f" stop-opacity="0"/>
-      <stop offset=".62" stop-color="#05070f" stop-opacity="0"/>
-      <stop offset="1" stop-color="#05070f" stop-opacity=".5"/>
-    </radialGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#60a5fa"/>
       <stop offset="1" stop-color="#2dd4bf"/>
     </linearGradient>
-    <linearGradient id="ideaGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7db4fb"/>
-      <stop offset="1" stop-color="#3ce0c8"/>
-    </linearGradient>
     <linearGradient id="textGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffffff"/>
       <stop offset="1" stop-color="#c3cfe6"/>
-    </linearGradient>
-    <linearGradient id="shine" x1="0" y1="0" x2="1" y2=".35">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#ffffff" stop-opacity=".3"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="divider" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#60a5fa" stop-opacity=".55"/>
-      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="barGrad" x1="0" y1="1" x2="0" y2="0">
       <stop offset="0" stop-color="#2dd4bf"/>
@@ -50,9 +31,6 @@
     <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
       <circle cx="1.5" cy="1.5" r="1" fill="#7dd3fc" opacity=".06"/>
     </pattern>
-    <mask id="titleMask">
-      <text x="640" y="212" text-anchor="middle" fill="#fff" font-size="54" font-weight="600" font-family="'Segoe UI','SF Pro Display','Helvetica Neue',Arial,sans-serif">De los datos&lt;tspan dx="14" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-weight="400" font-size="58"&gt;a las ideas.&lt;/tspan&gt;</text>
-    </mask>
   </defs>
 
   <style>
@@ -81,14 +59,6 @@
   <rect width="1280" height="400" fill="url(#bg)"/>
   <rect width="1280" height="400" fill="url(#grid)"/>
   <ellipse cx="640" cy="195" rx="520" ry="190" fill="url(#halo)"/>
-
-  <!-- Marco de esquinas -->
-  <g fill="none" stroke="url(#accent)" stroke-width="1.5" opacity=".35">
-    <path d="M24,64 V36 Q24,24 36,24 H64"/>
-    <path d="M1216,24 H1244 Q1256,24 1256,36 V64"/>
-    <path d="M24,336 V364 Q24,376 36,376 H64"/>
-    <path d="M1216,376 H1244 Q1256,376 1256,364 V336"/>
-  </g>
 
   <!-- Detalles de código sutiles -->
   <text class="float" style="animation-delay:-2s" x="345" y="105" font-family="ui-monospace,Consolas,monospace" font-size="26" fill="#7dd3fc" opacity=".09">{ }</text>
@@ -201,30 +171,6 @@
     <rect class="bar" style="animation-delay:-4s" x="1170" y="282" width="16" height="70" rx="2" fill="url(#barGrad)"/>
   </g>
 
-  <!-- Mini matriz de datos titilante -->
-  <g fill="#7dd3fc">
-    <circle class="tw" cx="400" cy="306" r="1.4"/>
-    <circle class="tw" style="animation-delay:-.6s" cx="425" cy="306" r="1.4"/>
-    <circle class="tw" style="animation-delay:-1.2s" cx="450" cy="306" r="1.4"/>
-    <circle class="tw" style="animation-delay:-1.8s" cx="475" cy="306" r="1.4"/>
-    <circle class="tw" style="animation-delay:-2.4s" cx="400" cy="322" r="1.4"/>
-    <circle class="tw" style="animation-delay:-3s" cx="425" cy="322" r="1.4"/>
-    <circle class="tw" style="animation-delay:-.9s" cx="450" cy="322" r="1.4"/>
-    <circle class="tw" style="animation-delay:-2.1s" cx="475" cy="322" r="1.4"/>
-    <circle class="tw" style="animation-delay:-1.5s" cx="400" cy="338" r="1.4"/>
-    <circle class="tw" style="animation-delay:-2.7s" cx="425" cy="338" r="1.4"/>
-    <circle class="tw" style="animation-delay:-.3s" cx="450" cy="338" r="1.4"/>
-    <circle class="tw" style="animation-delay:-3.4s" cx="475" cy="338" r="1.4"/>
-  </g>
-
-  <!-- Anillo analítico girando -->
-  <g>
-    <circle cx="925" cy="312" r="19" fill="none" stroke="#60a5fa" stroke-width="2" opacity=".15"/>
-    <circle cx="925" cy="312" r="19" fill="none" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" stroke-dasharray="30 89">
-      <animateTransform attributeName="transform" type="rotate" from="0 925 312" to="360 925 312" dur="18s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
   <!-- Partículas a la deriva -->
   <g fill="#7dd3fc">
     <circle class="pR" style="animation-duration:24s;animation-delay:-4s" cx="330" cy="72" r="2"/>
@@ -248,34 +194,7 @@
     <circle class="tw" style="animation-delay:-2.6s" cx="770" cy="352" r="1.2"/>
   </g>
 
-  <!-- Viñeta de profundidad -->
-  <rect width="1280" height="400" fill="url(#vig)"/>
-
-  <!-- Bloque central -->
-  <g>
-    <!-- Etiqueta superior monoespaciada -->
-    <line x1="348" y1="126" x2="418" y2="126" stroke="#7dd3fc" stroke-width="1" opacity=".2"/>
-    <line x1="862" y1="126" x2="932" y2="126" stroke="#7dd3fc" stroke-width="1" opacity=".2"/>
-    <text x="640" y="131" text-anchor="middle" font-family="ui-monospace,'Cascadia Mono','SF Mono',Consolas,monospace" font-size="12.5" letter-spacing="5.5" fill="#7dd3fc" opacity=".6">ANÁLISIS DE DATOS · PYTHON · IA</text>
-
-    <!-- Título mixto: sans-serif + serif itálica -->
-    <text x="640" y="212" text-anchor="middle" font-family="'Segoe UI','SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="54" font-weight="600" fill="url(#textGrad)">De los datos&lt;tspan dx="14" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-weight="400" font-size="58" fill="url(#ideaGrad)"&gt;a las ideas.&lt;/tspan&gt;</text>
-
-    <!-- Destello que recorre el título -->
-    <g mask="url(#titleMask)">
-      <rect x="-260" y="155" width="240" height="75" fill="url(#shine)">
-        <animateTransform attributeName="transform" type="translate" values="-180 0;1700 0;1700 0" keyTimes="0;.28;1" dur="9s" repeatCount="indefinite"/>
-      </rect>
-    </g>
-
-    <!-- Línea divisoria con punto viajero -->
-    <line x1="470" y1="248" x2="810" y2="248" stroke="url(#divider)" stroke-width="1"/>
-    <circle cx="470" cy="248" r="2.2" fill="#7dd3fc">
-      <animateMotion dur="7s" begin="-2s" repeatCount="indefinite" path="M470,248 L810,248"/>
-      <animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.85;1" dur="7s" begin="-2s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Subtítulo monoespaciado con cursor -->
-    <text x="640" y="292" text-anchor="middle" font-family="ui-monospace,'Cascadia Mono','SF Mono',Consolas,monospace" font-size="16" letter-spacing="1.2" fill="#8fa3c4" opacity=".9">convirtiendo información en decisiones&lt;tspan dx="8" fill="#5eead4"&gt;_&lt;animate attributeName="opacity" values="1;0" keyTimes="0;.5" calcMode="discrete" dur="1.2s" repeatCount="indefinite"/&gt;&lt;/tspan&gt;</text>
-  </g>
+  <!-- Texto central -->
+  <rect x="604" y="152" width="72" height="3" rx="1.5" fill="url(#accent)"/>
+  <text x="640" y="222" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="600" letter-spacing="1" fill="url(#textGrad)">De los datos a las ideas.</text>
 </svg>
