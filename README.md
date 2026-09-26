@@ -1,3 +1,6 @@
+<img src="banner.svg" alt="Banner de mi perfil" width="100%">
+
+
 👋 Hola, a todos!
 
 Estoy aprendiendo **Data Analytics** y construyendo proyectos donde los datos, la programación y la tecnología se convierten en soluciones para problemas reales.
